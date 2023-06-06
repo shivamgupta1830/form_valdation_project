@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #ffff;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url(./circle-scatter-haikei.png) no-repeat;
+  background-size: cover;
+}
+
+.box {
+  width: 400px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  box-shadow: -2px -2px 5px rgba(128, 178, 252, 0.1),
+    2px 2px 5px rgba(128, 178, 252, 0.1);
+  border-radius: 8px;
+  padding: 20px 40px;
+  backdrop-filter: blur(4px);
+}
+.signup-header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 5px 8px;
+}
+.signup-body p {
+  margin-top: 20px;
+  position: relative;
+}
+.signup-body p i {
+  position: absolute;
+  top: 36px;
+  right: 18px;
+  color: rgb(10, 163, 10);
+  font-size: 22px;
+}
+
+.signup-body p label {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.signup-body p input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  color: black;
+}
+.signup-body p span {
+  font-size: 18px;
+  font-weight: 750;
+  color: #913d4b;
+}
+.signup-body p input[type="submit"] {
+  border: none;
+  outline: none;
+  color: #ffff;
+  background-color: #913d4b;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+.signup-body p input[type="submit"]:hover {
+  background-color: #ad394c;
+}
+.signup-footer p {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.signup-footer a {
+  text-decoration: none;
+}
+.signup-footer p a:hover {
+  text-decoration: underline;
+  color: #ad394c;
+}
+
+#nameError {
+  color: rgb(10, 163, 10);
+}
